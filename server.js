@@ -16,9 +16,13 @@ app.use('/api/profile',require('./routes/api/profile'));
 app.use('/api/collections',require('./routes/api/collections'));
 app.use('/api/games',require('./routes/api/games'));
 
-if (process.env.NODE_ENV === "production"){
+if (process.env.NODE_ENV === "production") {
+
     app.use(express.static("client/build"));
-}
+    app.get("*", (req, res) => {
+      res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    });
+  }
 
 const PORT = process.env.PORT || 5000;
 
