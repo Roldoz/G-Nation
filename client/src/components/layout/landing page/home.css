@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+ .containerHome{
+    /* background:#0c0c0c; */
+     width: 100%;
+     height: 100vh;
+     /* padding-left: 8%;
+     padding-right: 8%; */
+     /* margin-top: 200px; */
+     box-sizing: border-box;
+     overflow: hidden;
+     
+ }
+ 
+
+ .row{
+     display: flex;
+     
+     justify-content: space-evenly;
+     align-items: center;
+     margin: -60px 10%;
+     
+  
+ }
+ .col-1{
+     
+    /* margin: 3% 10%; */
+    width: 60%;
+     position: relative;
+     
+
+ }
+.col-1 h1{
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: rgb(228, 228, 228);
+    /* width: 100%; */
+    margin-bottom: 0;
+    
+}
+ 
+ .col-1 p{
+     font-size: 15px;
+     color: #212121;
+     font-family: 'Poppins', sans-serif;
+     color: rgb(228, 228, 228);
+    letter-spacing: 1px;
+    width: 100%;
+    line-height: 23px;
+    margin-bottom: 0;
+ }
+.row button{
+    width: 100px;
+    border: 0;
+    padding: 8px 8px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    background: #D0DBCE;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: width 0.5s;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+}
+
+
+
+
+.col-1::after{
+    content: '';
+    width: 5px;
+    height: 95%;
+    background: #D0DBCE;
+    position: absolute;
+    left: -34px;
+    top: 13px;
+}
+
+.col-2{
+    position: relative;
+    /* width: 90%; */
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.row .col-2 img{
+    width: 125%;
+
+}
+
+.social-links{
+    z-index: 40;
+}
+.social-links i{
+height: 25px;
+margin: 0 13px;
+cursor: pointer;
+color:#dbdbdb;
+
+}
+.social-links{
+    text-align: center;
+}
+/* span{
+    
+    color:  #fff;
+    
+}
+span:before{
+    content: '';
+    animation: animate infinite ease 6s;
+} */
+@keyframes animate{
+    0%{
+        content:'GAMERS'
+    }
+    50%{
+        content: 'COLLECTORS';
+    }
+    100%{
+        content: 'PEOPLE';
+    }
+  
+}
+
+@media only screen and (max-width:750px){
+    .containerHome{
+        width: 100%;
+        height: 100vh;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+   
+    .navbar img{
+        width:300px;
+        cursor: pointer;
+        margin: 20px auto;
+    }
+    .row{
+        flex-direction: column-reverse;
+        /* margin:10px 0; */
+        text-align: left;
+    }
+
+    .row .col-2 img{
+        width: 150%;
+       margin-left:-50px ;
+    
+    }
+   
+    .col-1 h1{
+        font-size: 30px;
+        color: #fff;
+        margin: 20px 0;
+        
+    }
+  
+}
+
+
+
+@media (max-width:1100px){
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+   
+    /* .navbar img{
+        width:300px;
+        cursor: pointer;
+        margin: 20px auto;
+    } */
+    .row{
+        flex-direction: column-reverse;
+        margin:20px 0;
+        text-align: left;
+    }
+   
+    .col-1 h1{
+        font-size: 30px;
+        color: #fff;
+        margin: 20px 0;
+        
+    }
+  
+  
+  }

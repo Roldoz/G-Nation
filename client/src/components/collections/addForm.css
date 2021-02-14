@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.addCol {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 60%;
+    height: 200px;
+    margin: 60px auto;
+   border: 1px solid #414141;
+    padding: 15px;
+    border-radius: 4px;
+  position: relative;
+  transition: .3s ease-in;
+ 
+  }
+
+
+
+  .textCol{
+      color: #dbdbdb;
+      padding: 6px 12px;
+      width: 100%;
+      height: 110px;
+      border: 1px solid #414141;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: #1b1b1d;
+  }
+
+  .butCol{
+    border: 1px solid #414141;
+    width: 16%;
+    margin-top:10px;
+    margin-right: 15px;
+    color: #dbdbdb;
+    height: 40px;
+    transition: .2s ease-in;
+    font-family: 'Poppins', sans-serif;
+  }
+  .butCol:hover{
+    background:#212224
+  }
+
+  .addCom{
+    font-weight: 300;
+    font-size: 1rem;
+    width: 60%;
+    height: 167px;
+    margin: 30px auto;
+   border: 1px solid #414141;
+    padding: 15px;
+    border-radius: 4px;
+  position: relative;
+  transition: .3s ease-in;
+  }
+
+  
+  .fa-camera 
+  {
+      color: #999;
+      cursor: pointer;
+     
+  }
+.mandatory{
+  color: #999;
+  margin-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+  .textCom{
+    color: #dbdbdb;
+    padding: 6px 12px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #414141;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #1b1b1d;
+  }
+
+
+
+/* comment */
+
+  .showCom{
+    font-weight: 300;
+    width: 60%;
+    min-height: 80px;
+    margin: 30px auto;
+   border: 1px solid #414141;
+   background: #1b1b1d;
+  
+    padding: 10px;
+    border-radius: 4px;
+  position: relative;
+ 
+  }
+.showCom h4{
+  color: #dbdbdb;
+  font-size: 20px;
+}
+
+
+  .userIcon{
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #424242;
+    font-size: 1em;
+  }
+
+  .userIcon img{
+ 
+    height: 100%;
+    width: auto;
+  }
+
+
+  .rightSec{
+margin-left: 75px;
+background: transparent;
+font-family: 'Poppins', sans-serif;
+  }  
+  
+  .rightSec p {
+    color: #999;
+    background: transparent;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  .rightSec h4{
+    background: transparent;
+  }
+
+  .comBut{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    color: #999;
+  opacity: 0.5;
+  transition: 0.4 ease-in-out;
+  }
+
+  .comBut:hover{
+    transform:  scale(1.1);
+  opacity: 1;
+  }
+
+
+  /* input */
+ 
+  @media (max-width:1200px){
+
+    .addCol {
+      font-weight: 300;
+      font-size: 1rem;
+      width: 90%;
+      height: 200px;
+      margin: 60px auto;
+     border: 1px solid #414141;
+      padding: 15px;
+      border-radius: 4px;
+    position: relative;
+    transition: .3s ease-in;
+   
+    }
+  
+  
+  }
+  @media (max-width:700px){
+    .addCom{
+      font-weight: 300;
+      font-size: 1rem;
+      width: 90%;
+      height: 167px;
+      margin: 30px auto;
+     border: 1px solid #414141;
+      padding: 15px;
+      border-radius: 4px;
+    position: relative;
+    transition: .3s ease-in;
+    }
+    .showCom{
+      font-weight: 300;
+      width: 90%;
+      min-height: 80px;
+      margin: 30px auto;
+     border: 1px solid #414141;
+     background: #1b1b1d;
+    
+      padding: 10px;
+      border-radius: 4px;
+    position: relative;
+   
+    }
+    .showCom h4{
+      color: #dbdbdb;
+      font-size: 17px;
+    }
+  }

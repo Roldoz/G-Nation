@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://roldoz:roldoz@cluster0.bftvt.mongodb.net/database?retryWrites=true&w=majority",
+    "jwtSecret":"secretCode"
+}

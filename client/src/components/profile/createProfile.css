@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.createPro{
+    display: block;
+    margin: 6% 10%;
+    text-align: center;
+    color: #dbdbdb;
+}
+
+.createPro h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  color: #dbdbdb;
+
+}
+
+.fa-gamepad{
+    margin: 0 10px;
+    color:#e8b563
+}
+.createPro button{
+  margin: 20px 0;
+font-size: 23px;
+background: #bebfc2;
+height: 50px;
+color: #2C2C2C;
+text-align: center;
+width: 200px;
+cursor: pointer;
+font-weight: 400;
+}
+
+.globalForm {
+  display: block;
+  position: relative;
+}
+
+.globalForm div{
+
+  width: 60%;
+  margin: 20px auto;
+}
+
+.globalForm div small{
+  display: block;
+  margin-top: 0.3rem;
+  color: #e8b563;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  opacity: 0.6;
+}
+
+.globalForm div input{
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 30px;
+  margin: 10px;
+    border: 0;
+    color: #e4e6eb;
+    transition: all 0.30s ease-in;
+    padding: 10px;
+    background: #242526;
+  
+}
+.globalForm div input,textarea,select:focus{
+  outline: none;
+}
+
+
+/* .globalForm div input:hover{
+  box-shadow: 0 0 15px #D0DBCE;
+  border-top: 1px solid #D0DBCE;
+} */
+
+.bio{
+  display: block;
+  width: 100%;
+  height: 150px;
+  font-size: 25px;
+    border: 0;
+    color: #D0DBCE;
+    transition: all 0.30s ease-in;
+    padding: 12px;
+    background: #242526;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+}
+
+
+
+.kind{
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+    border: 0;
+    color: rgb(170, 170, 170);
+    transition: all 0.30s ease-in;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    background: #242526;
+    margin: 10px;
+}
+
+
+
+
+
+.social-input {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.social-input input{
+  width: 100%;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.social-input i.fa-twitch {
+  color: #7e06b6;
+}
+.social-input i.fa-facebook {
+  color: #3b5998;
+}
+.social-input i.fa-instagram {
+  color: #ff993a;
+}
+.social-input i.fa-youtube {
+  color: #d43731;
+}
+

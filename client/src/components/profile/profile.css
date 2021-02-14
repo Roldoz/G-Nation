@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
+@import url(https://fonts.googleapis.com/css?family=Open+sans);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+.snip {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  margin: 4% auto;
+  min-width: 230px;
+  max-width: 70%;
+  width: 100%;
+  color: #dbdbdb;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  box-shadow: none !important;
+}
+
+.backColPro{
+  color: #dbdbdb;
+  margin-top: 4% ;
+  margin-left: 15%;
+  margin-bottom: -10%;
+  border: 1px solid #414141;
+  width: 100px;
+  font-size: 20px;
+  height: 40px;
+  transition: .2s ease-in;
+  font-family: 'Poppins', sans-serif;
+}
+.backColPro:hover{
+  background:#212224
+}
+
+.snip * {
+  box-sizing: border-box;
+  
+}
+
+.snip .profile-image {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #414141;
+  z-index: 10;
+}
+
+.snip .profile-image img {
+  width: auto;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.snip figcaption {
+  width: 100%;
+  border: 1px solid #414141;
+  color: #555;
+  padding: 125px 25px 25px;
+  margin-top: -100px;
+  display: inline-block;
+  position: relative;
+}
+
+.snip h2,
+.snip h3,
+.snip h4 {
+  margin: 0 0 15px;
+  background-color: transparent;
+  color: #dbdbdb;
+}
+
+.snip h3 {
+  
+  font-weight: 600;
+  font-size: 1.3em;
+  
+}
+
+.snip p{
+  color: #8c8c8c;
+}
+.snip h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip p {
+  
+  font-size: 0.9em;
+ 
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.snip .icons {
+  text-align: center;
+  width: 100%;
+}
+
+.snip i {
+  padding: 10px 2px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #e8b563;
+  opacity: 0.75;
+}
+
+.snip i:hover {
+  opacity: 1;
+  
+  transition: all 0.35s ease;
+}
+.snip hr{
+  margin: 13px auto;
+  border: 1px solid #414141;
+  width: 60%;
+  
+}
+
+.snip li{
+  list-style: none;
+  color: #e8b563;
+  opacity: 0.75;
+  display: inline;
+}
+
+.listGames{
+  
+margin-bottom: 0;
+  
+}
+
+
+
+.snip .edpro{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #464646;
+  border: 1px solid #464646;
+  transition: 0.4s ease-in-out;
+  padding: 12px;
+  cursor: pointer;
+}
+.snip .edpro:hover{
+  border: 1px solid #e8b563;
+  color: #e8b563;
+  opacity: 0.8;
+}
+
+.snip .delpro{
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  border: 1px solid #464646;
+  text-align: center;
+  color: #414141;
+  transition: 0.4s ease-in-out;
+  padding: 12px;
+  cursor: pointer;
+}
+.snip .delpro:hover{
+  border: 1px solid #f04426;
+  color: #f04426;
+  opacity: 0.8;
+}
+
+@media (max-width:750px){
+  .snip .profile-image {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #414141;
+    z-index: 10;
+  }
+  .snip .delpro{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    color: #414141;
+    transition: 0.4s ease-in-out;
+    padding: 3px;
+    
+    cursor: pointer;
+  }
+  .snip .edpro{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #464646;
+    border: 1px solid #464646;
+    transition: 0.4s ease-in-out;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+}

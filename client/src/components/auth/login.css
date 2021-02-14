@@ -1,0 +1,115 @@
+
+.grid{
+    
+    margin: 12% auto;
+    max-width: 30%;
+    display: block;
+    text-align: center;
+    
+}
+.form_field{
+  position: absolute; 
+
+}
+.form_field i{
+  padding: 10px; 
+            min-width: 70px; 
+           
+            z-index: 10;
+}
+.loginInput{
+  width: 100%; 
+    border: 0;
+    color: #dbdbdb;
+ height: 65px;
+ font-family: 'Poppins', sans-serif;
+ display: block;
+  font-size: 22px;
+  /* transition: all 0.30s ease-in; */
+padding: 10px;
+background: #242526;
+/* border-radius: 10px; */
+margin: 10px 0;
+}
+
+.loginInput:focus{
+  outline: none;
+}
+
+
+.lbutton{
+ margin-bottom: 10px;
+  font-size: 22px;
+  background: #b0b3b8;
+  height: 80px;
+  color: #2C2C2C;
+  text-align: center;
+  cursor: pointer;
+}
+.lbutton span {
+  color: #2C2C2C;
+  background: #b0b3b8;
+  display: inline-block;
+  min-width: 0.3em;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+.lbutton:before {
+  
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+.lbutton:hover:before, .h-button:focus:before {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+.lbutton:hover span, .h-button:focus span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.lbutton:hover span:nth-child(1), .h-button:focus span:nth-child(1) {
+  transition-delay: 0.025s;
+}
+.lbutton:hover span:nth-child(2), .h-button:focus span:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.lbutton:hover span:nth-child(3), .h-button:focus span:nth-child(3) {
+  transition-delay: 0.075s;
+}
+.lbutton:hover span:nth-child(4), .h-button:focus span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+.lbutton:hover span:nth-child(5), .h-button:focus span:nth-child(5) {
+  transition-delay: 0.125s;
+}
+.lbutton:hover span:nth-child(6), .h-button:focus span:nth-child(6) {
+  transition-delay: 0.15s;
+}
+
+.grid a{
+  font-size: 18px;
+  color: #e8b563;
+  text-decoration: none;
+}
+
+.grid p{
+  font-size: 15px;
+  font-weight: 300;
+  color: #b0b3b8;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+@media (max-width:1000px){
+
+  .grid{
+    max-width: 60%;
+}
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.cardCol {
+  font-weight: 300;
+  font-size: 1rem;
+  width: 60%;
+  margin: 2% auto;
+ border: 1px solid #414141;
+  padding: 10px 15px;
+  border-radius: 4px;
+position: relative;
+transition: .3s ease-in;
+}
+
+.backCol{
+    color: #dbdbdb;
+    margin-top: 5% ;
+    margin-left: 20%;
+    border: 1px solid #414141;
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    transition: .2s ease-in;
+    font-family: 'Poppins', sans-serif;
+}
+.backCol:hover{
+    background:#212224
+}
+
+.c__title {
+  color: #dbdbdb;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 40px 0 15px 0;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  background: none;
+  margin-top: 50px;
+}
+.c__image {
+  display: block;
+  transition: .3s ease-in-out;
+  /* position: absolute; */
+  /* margin: -10px -15px 0; */
+  /* height: 100%; */
+ margin: 30px auto;
+width: 95%;
+  /* top: 0;
+  right:0; */
+  
+}
+
+
+
+.c__icon {
+  display: inline-block;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  
+  border: 1px solid #424242;
+  border-radius: 50%;
+ 
+  top: -1.6em;
+  left: 45%;
+  font-size: 1.7em;
+}
+
+.c__icon img{
+ 
+  height: 100%;
+  width: auto;
+}
+
+
+.c__content {
+  margin: 0 25px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #999;
+  
+  background: none;
+  text-align: center;
+}
+.card__footer {
+  padding: 0.2em 0;
+  margin: 1.5em 0 0.5em 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #888;
+  opacity: 0.75;
+  background: none;
+}
+
+.cardCol button{
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+  opacity: 0.75;
+  background: none;
+  color: #888;
+}
+.cardCol button p{
+  color: #f04426;
+  opacity: 0.8;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.cardCol span{
+  margin-left:8px;
+}
+
+.cardCol button :hover{
+  transition: .4s ease-in-out;
+  transform:  scale(1.2);
+  opacity: 1;
+}
+
+@media (max-width:700px){
+  .cardCol {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 90%;
+    margin: 2% auto;
+   border: 1px solid #414141;
+    padding: 10px 15px;
+    border-radius: 4px;
+  position: relative;
+  transition: .3s ease-in;
+  }
+}
