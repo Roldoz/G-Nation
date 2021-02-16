@@ -1,4 +1,7 @@
 {
     "mongoURI":"mongodb+srv://roldoz:roldoz@cluster0.bftvt.mongodb.net/database?retryWrites=true&w=majority",
-    "jwtSecret":"secretCode"
+    "jwtSecret":"secretCode",
+    "CLOUD_NAME":"dtsrxduzz",
+    "API_KEY":"221749714374171",
+    "API_SECRET":"WRZR14xYQsXOAsFw_0Juqj1k-U4"
 }

@@ -6,6 +6,20 @@ const Collection=require('../../models/Collection');
 const User = require('../../models/User');
 const { route } = require('./auth');
 const multer = require('multer');
+const cloudinary = require("cloudinary").v2;
+const config = require("config");
+const cloud_name = config.get("CLOUD_NAME");
+const api_key = config.get("API_KEY");
+const api_secret = config.get("API_SECRET");
+
+
+
+cloudinary.config({
+    cloud_name,
+    api_key,
+    api_secret,
+  });
+  
 
 
 var storage = multer.diskStorage({
@@ -31,11 +45,12 @@ if(!errors.isEmpty()){
 }
 try {
     const user = await User.findById(req.user.id).select('-password');
-    const path = req.protocol + '://' + req.hostname + ':' + 5000 + '/uploads/' + req.file.filename
+    const result = await cloudinary.uploader.upload(req.file.path,res => console.log(res));
+
 const newCollection = new Collection({
     text:req.body.text,
     name:user.name,
-    collectionImage:path,
+    collectionImage:result.secure_url,
     avatar:user.avatar,
     user:req.user.id
 })
