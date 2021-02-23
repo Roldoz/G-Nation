@@ -22,7 +22,7 @@ export default function (state = initialState, { type, payload }) {
     case ADD_GAMEPLAY:
       return {
         ...state,
-        gameplays: [...state.gameplays,payload],
+        gameplays: [payload,...state.gameplays],
         loading: false,
       };
     case DELETE_GAMEPLAY:
