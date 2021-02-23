@@ -1,8 +1,5 @@
 import "./SingleGameplay.css";
-
 import { useSelector, useDispatch } from "react-redux";
-/* import { forwardRef } from "react"; */
-// import {Link} from 'react-router-dom';
 import ReactPlayer from "react-player";
 import { deleteGameplay } from "../../js/actions/gameplay";
 
@@ -22,7 +19,7 @@ function SingleGameplay({ gameplay: { _id, title, url, user } }) {
           <i class="far fa-times-circle fa-2x"></i>
         </button>
       )}
-      <ReactPlayer url={url} controls="true" width="100%" />
+      <ReactPlayer url={url} controls="true" width="100%"  />
     </div>
   );
 }

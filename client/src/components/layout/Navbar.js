@@ -19,7 +19,7 @@ const authNav =(
 
     <li>
     <Link to="/gameplays">
-    Gameplays</Link>
+    Gameplays </Link>
   </li>
  
 

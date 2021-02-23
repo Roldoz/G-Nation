@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../style/Spinner";
 import "./gameplays.css";
-// import { Link } from "react-router-dom";
 import { getGameplays,addGameplay } from "../../js/actions/gameplay";
 import AddGameplay from './AddGameplay';
 import {motion} from 'framer-motion';

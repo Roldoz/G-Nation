@@ -39,7 +39,7 @@ function AddGameplay() {
           />
            <input
             type="text"
-            placeholder="Url address ( youtube, twitch, dailymotion.. )"
+            placeholder="Url address ( youtube, dailymotion.. )"
             name="url"
             value={url}
             onChange={e => onChange(e)}
