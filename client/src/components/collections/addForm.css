@@ -143,11 +143,10 @@ font-family: 'Poppins', sans-serif;
     border: none;
     color: #999;
   opacity: 0.5;
-  transition: 0.4 ease-in-out;
+  transition: .3s ease-in;
   }
 
   .comBut:hover{
-    transform:  scale(1.1);
   opacity: 1;
   }
 

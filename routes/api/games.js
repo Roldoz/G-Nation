@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const auth = require('../../middleware/authetification')
 const Game=require('../../models/Game');
 const User = require('../../models/User');
-const{check,validationResult}=require('express-validator')
+
 
 //Create post
 router.post('/',auth,async(req,res)=>{

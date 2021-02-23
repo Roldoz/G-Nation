@@ -7,9 +7,11 @@ function AddCollection() {
   const dispatch = useDispatch();
   const [text, setText] = useState("");
   const [file, setFile] = useState();
+  const [currentImage, setCurrentImage] = useState();
 
   const onChangeFile = (e) => {
     setFile(e.target.files[0]);
+    setCurrentImage(e.target.files[0].name);
   };
 
   const handleSubmit = (e) => {
@@ -19,6 +21,7 @@ function AddCollection() {
     e.preventDefault();
     dispatch(addCollection(formData));
     setText("");
+    setCurrentImage('')
   };
   return (
     <>
@@ -44,7 +47,7 @@ function AddCollection() {
           
           
           <input type="file" name="collectionImage" onChange={onChangeFile} id='inputbtn' hidden/>
-         <label for="inputbtn"><i class="fas fa-camera fa-2x"></i><span className='mandatory'>Photos are mandatory</span> </label>
+         <label for="inputbtn"><i class="fas fa-camera fa-2x"></i><span className='mandatory'>{currentImage ? currentImage : "photos are required"}</span> </label>
          
         </form>
       </article>

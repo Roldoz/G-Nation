@@ -9,7 +9,6 @@ import { Provider } from "react-redux";
 import { useEffect } from "react";
 import "./App.css";
 import store from "./js/store";
-// import { PageTransition } from "@steveeeie/react-page-transition";
 import setToken from "./js/actions/setToken";
 import { loadUser } from "./js/actions/authAction";
 import Dashboard from "./components/profile/Dashboard";
@@ -23,6 +22,7 @@ import Snake from "./components/Game/Snake";
 import AdminRoute from "./components/routes/AdminRoute";
 import AddGame from './components/games/AddGame';
 import Games from "./components/games/Games";
+import Gameplays from "./components/gameplays/Gameplays";
 import Footer from "./components/layout/Footer";
 import EditGame from "./components/games/EditGame";
 
@@ -55,6 +55,7 @@ function App() {
         <PrivateRoute exact path="/mini-game" component={Snake} />
         <PrivateRoute exact path="/collections/:id" component={Collection} />
         <PrivateRoute exact path="/games" component={Games} />
+        <PrivateRoute exact path="/gameplays" component={Gameplays} />
         <AdminRoute exact path='/add-game' component={AddGame} />
         <AdminRoute exact path='/edit-game/:id' component={EditGame}/>
       </Switch>

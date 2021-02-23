@@ -39,7 +39,7 @@ const pageVariants = {
       
 <div className='collections'style={{margin:'8% auto'}}>
 <AddCollection />
-<FlipMove  staggerDurationBy={220} enterAnimation="fade" leaveAnimation="fade" >
+<FlipMove  staggerDurationBy={200} enterAnimation="fade" leaveAnimation="fade" >
 {collections.map(collection=>(
 <SingleCollection key={collection._id} collection={collection} />
 ))}

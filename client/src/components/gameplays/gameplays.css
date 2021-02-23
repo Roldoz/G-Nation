@@ -1,0 +1,63 @@
+.gameplays{
+    margin: 6% auto;
+
+}
+.gameplays h1{
+    color: #dbdbdb;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.mapped-gameplays{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Add form */
+
+.addGampl{
+    font-weight: 300;
+    font-size: 1rem;
+    width: 60%;
+    /* height: 200px; */
+    margin: 20px auto;
+   border: 1px solid #414141;
+    padding: 15px;
+    border-radius: 4px;
+  position: relative;
+  transition: .3s ease-in;
+}
+
+.addGampl input{
+    color: #dbdbdb;
+    padding: 6px 12px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    border: 1px solid #414141;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #1b1b1d;
+}
+
+.addGampl input:focus{
+    outline: none;
+}
+.addGampl button{
+    border: 1px solid #414141;
+    width: 160px;
+    margin-top:10px;
+    margin-top: 0;
+    color: #dbdbdb;
+    height: 40px;
+    transition: .2s ease-in;
+    font-family: 'Poppins', sans-serif;
+}
+
+.addGampl button:hover{
+    background:#212224
+}

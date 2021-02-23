@@ -16,6 +16,7 @@ app.use('/api/auth',require('./routes/api/auth'));
 app.use('/api/profile',require('./routes/api/profile'));
 app.use('/api/collections',require('./routes/api/collections'));
 app.use('/api/games',require('./routes/api/games'));
+app.use('/api/gameplays',require('./routes/api/gameplays'));
 
 if (process.env.NODE_ENV === "production") {
 

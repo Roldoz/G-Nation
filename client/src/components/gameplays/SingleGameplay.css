@@ -1,0 +1,30 @@
+.gameplay{
+    width: 440px;
+    margin: 10px;
+    border: 1px solid #414141;
+    padding: 10px;
+    background:#212224;
+    position:relative
+}
+
+.gameplay h2{
+    font-size: 18px;
+    width: 85%;
+    color: #dbdbdb;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+}
+.gameplay h3{
+    color: #999;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+}
+.gameplay p{
+    color: #999;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+    position: absolute;
+    margin-left: 10px;
+    top: 15px;
+    right: 15px;
+}

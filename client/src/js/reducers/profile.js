@@ -1,4 +1,4 @@
-import { ERROR_PROFILE, GET_PROFILE, CLEAR_PROFILE } from "../actions/actionTypes";
+import { ERROR_PROFILE, GET_PROFILE,GET_PROFILES, CLEAR_PROFILE } from "../actions/actionTypes";
 
 
 const initialState = {
@@ -17,6 +17,12 @@ switch(type){
             profile:payload,
             loading:false
         };
+        case GET_PROFILES:
+            return {
+              ...state,
+              profiles: payload,
+              loading: false
+            };
         case ERROR_PROFILE:
             return{
                 ...state,

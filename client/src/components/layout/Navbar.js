@@ -16,11 +16,16 @@ const authNav =(
     <Link to="/collections">
     Collections</Link>
     </li>
-  
+
+    <li>
+    <Link to="/gameplays">
+    Gameplays</Link>
+  </li>
+ 
 
     <li>
     <Link to="/games">
-    Games vote</Link>
+    Vote</Link>
   </li>
   <li>
     <Link to="/mini-game">

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {setAlert} from './alert';
-import {GET_PROFILE,ERROR_PROFILE, DELETE_ACCOUNT,CLEAR_PROFILE} from './actionTypes';
+import {GET_PROFILE,GET_PROFILES,ERROR_PROFILE, DELETE_ACCOUNT,CLEAR_PROFILE} from './actionTypes';
 
 
 //Get profile
@@ -19,6 +19,27 @@ dispatch({
     })
 }
 }
+
+// Get all profiles
+export const getProfiles = () => async dispatch => {
+    // dispatch({
+    //   type: CLEAR_PROFILE
+    // });
+  
+    try {
+      const res = await axios.get("/api/profile");
+  
+      dispatch({
+        type: GET_PROFILES,
+        payload: res.data
+      });
+    } catch (err) {
+      dispatch({
+        type: ERROR_PROFILE,
+        payload: { msg: err.response.statusText, status: err.response.status }
+      });
+    }
+  };
 
 //Create / update profile
 export const createProfile= (formData,history,edit=false) => async dispatch =>{
