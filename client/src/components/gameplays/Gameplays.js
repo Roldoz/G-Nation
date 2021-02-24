@@ -40,7 +40,7 @@ function Gameplays() {
         exit="out"
         variants={pageVariants}
         className='gameplays'>
-        {/* <h1>Add New Gameplay</h1> */}
+
        <AddGameplay />
        
          <div className='mapped-gameplays'>

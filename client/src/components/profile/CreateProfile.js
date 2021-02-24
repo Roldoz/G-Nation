@@ -80,7 +80,7 @@ function CreateProfile() {
             <option value="Other">Other</option>
           </select>
           <small >
-            Give us an idea of where you are at in your career * Mandatory *
+            Give us an idea of where you are at in your career / required field /
           </small>
         </div>
         <div>
@@ -93,7 +93,7 @@ function CreateProfile() {
             autoComplete='off'
           />
           <small>
-            Your favorite platform to play on * Mandatory *
+            Your favorite platform to play on / required field /
           </small>
         </div>
         <div >

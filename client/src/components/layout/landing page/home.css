@@ -43,7 +43,7 @@
     font-family: 'Press Start 2P', cursive;
     letter-spacing: 3px;
     font-size: 45px;
-    color: rgb(228, 228, 228);
+    color: #bebfc2;
     /* width: 100%; */
     margin-bottom: 0;
     
@@ -53,7 +53,7 @@
      font-size: 15px;
      color: #212121;
      font-family: 'Poppins', sans-serif;
-     color: rgb(228, 228, 228);
+     color: #bebfc2;
     letter-spacing: 1px;
     width: 100%;
     line-height: 23px;
@@ -65,7 +65,7 @@
     padding: 8px 8px;
     font-family: 'Poppins', sans-serif;
     outline: none;
-    background: #D0DBCE;
+    background: #bebfc2;
     cursor: pointer;
     margin-top: 20px;
     transition: width 0.5s;
@@ -81,7 +81,7 @@
     content: '';
     width: 5px;
     height: 95%;
-    background: #D0DBCE;
+    background: #bebfc2;
     position: absolute;
     left: -34px;
     top: 13px;
@@ -106,7 +106,7 @@
 height: 25px;
 margin: 0 13px;
 cursor: pointer;
-color:#dbdbdb;
+color:#bebfc2;
 
 }
 .social-links{
