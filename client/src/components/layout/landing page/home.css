@@ -65,7 +65,7 @@
     padding: 8px 8px;
     font-family: 'Poppins', sans-serif;
     outline: none;
-    background: #bebfc2;
+    background: #bebfc1;
     cursor: pointer;
     margin-top: 20px;
     transition: width 0.5s;
@@ -81,7 +81,7 @@
     content: '';
     width: 5px;
     height: 95%;
-    background: #bebfc2;
+    background: #bebfc1;
     position: absolute;
     left: -34px;
     top: 13px;
@@ -106,7 +106,7 @@
 height: 25px;
 margin: 0 13px;
 cursor: pointer;
-color:#bebfc2;
+color:#bebfc1;
 
 }
 .social-links{
