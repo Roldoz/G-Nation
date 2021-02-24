@@ -50,7 +50,9 @@ Logout
 
 const guestNav =(
   <ul>
-            
+        <li>
+    <Link to="/register">Sign Up</Link>
+  </li>   
   <li>
     <Link to="/register">Sign Up</Link>
   </li>
