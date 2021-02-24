@@ -6,9 +6,11 @@
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
-    "client": "npm start --prefix client",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku_postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku_postbuild": "cd client && npm install && npm run build"
   },
   "author": "Hatem Hamrouni",
   "license": "ISC",
