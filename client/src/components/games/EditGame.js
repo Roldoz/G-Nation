@@ -16,7 +16,7 @@ function EditGame({ match }) {
   const { type, name, photo, description } = formData;
 
   const dispatch = useDispatch();
-  const history = useHistory();
+  
   const game = useSelector((state) =>
     state.game.games.find((g) => g._id === match.params.id)
   );

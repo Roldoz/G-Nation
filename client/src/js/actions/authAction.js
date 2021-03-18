@@ -9,6 +9,7 @@ import{
     LOGIN_FAIL,
     LOGOUT,
     CLEAR_PROFILE,
+    UPDATE_PICTURE,
 } from './actionTypes';
 import setToken from'./setToken';
 
@@ -110,3 +111,22 @@ export const logout = () => dispatch =>{
 
 };
 
+// update picture
+
+export const updatePicture = (avatar,id) => async (dispatch) => {
+   
+  try {
+    const res = await axios.put(`/api/users/${id}`,avatar);
+
+    dispatch({
+      type: UPDATE_PICTURE,
+      payload: res.data,
+    });
+    dispatch(loadUser())
+  } catch (err) {
+    dispatch({
+      type: AUTH_ERROR,
+      payload: { msg: err.response.statusText, status: err.response.status },
+    });
+  }
+};

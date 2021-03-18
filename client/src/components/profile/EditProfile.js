@@ -3,6 +3,8 @@ import './createProfile.css';
 import {useDispatch,useSelector} from 'react-redux';
 import {createProfile,getProfile} from '../../js/actions/profile';
 import { useHistory } from "react-router-dom";
+import FileBase from 'react-file-base64';
+import {updatePicture} from '../../js/actions/authAction'
 import {motion} from 'framer-motion'
 
 
@@ -37,7 +39,9 @@ function EditProfile() {
       } = formData;
 
       const loading = useSelector(state => state.profile.loading);
+      const user = useSelector((state) => state.auth.user);
       const profile = useSelector(state => state.profile.profile);
+      const[avatar,setAvatar] = useState('')
 
       useEffect(() => {
         dispatch(getProfile());
@@ -61,6 +65,7 @@ instagram: loading || !profile.social ? '' : profile.social.instagram,
 
       const onSubmit = e => {
         e.preventDefault();
+        dispatch(updatePicture(avatar, user._id));
         dispatch(createProfile(formData, history,true));
       };
 
@@ -87,6 +92,21 @@ instagram: loading || !profile.social ? '' : profile.social.instagram,
 <h1>Edit Your Profile</h1>
     
       <form className="globalForm" onSubmit={e=>onSubmit(e)} >
+      <div >
+
+          <FileBase
+            typel="file"
+            multiple={false}
+            onDone={({ base64 }) =>
+              setAvatar({ avatar: base64 })
+            }
+           
+          />
+ <small >
+            Edit your profile picture
+          </small>
+         
+        </div>
         <div>
           <select className='kind' name="type" value={type} onChange={e => onChange(e)}>
             <option value="0">which kind of gamers are you ?</option>

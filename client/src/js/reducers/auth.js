@@ -6,7 +6,8 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  DELETE_ACCOUNT
+  DELETE_ACCOUNT,
+  UPDATE_PICTURE
 } from "../actions/actionTypes";
 
 const initialState = {
@@ -25,7 +26,12 @@ export default function (state = initialState, { type, payload }) {
         loading: false,
         user: payload,
       };
-      
+      case UPDATE_PICTURE:
+        return{
+          ...state,
+          user:{...state.user,payload},
+          loading: false
+        }
     case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:
       localStorage.setItem("token", payload.token);

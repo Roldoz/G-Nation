@@ -4,7 +4,6 @@ const {check, validationResult}=require('express-validator');
 const auth = require('../../middleware/authetification')
 const Collection=require('../../models/Collection');
 const User = require('../../models/User');
-const { route } = require('./auth');
 const multer = require('multer');
 const cloudinary = require("cloudinary").v2;
 const config = require("config");

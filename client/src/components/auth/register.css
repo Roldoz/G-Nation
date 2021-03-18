@@ -67,6 +67,32 @@ font-family: 'Poppins', sans-serif;
 
 }
 
+.div_form__field{
+  width: 100%; 
+  border: 0;
+  color: #dbdbdb;
+height: 65px;
+font-family: 'Poppins', sans-serif;
+display: block;
+font-size: 13px;
+/* transition: all 0.30s ease-in; */
+padding: 15px 10px;
+background: #242526;
+/* border-radius: 10px; */
+margin: 12px 0;
+}
+.div_form__field *{
+  background: none;
+  color: #939495;
+}
+.div_form__field label{
+  margin-right: 10px;
+  margin-left: -21px;
+  font-size: 20px;
+  background: none;
+  color: #939495;
+}
+
 @media (max-width:1200px){
 
   .grid{

@@ -4,6 +4,7 @@ import { Link,Redirect } from "react-router-dom";
 import {register} from '../../js/actions/authAction';
 import { useDispatch,useSelector } from "react-redux";
 import{setAlert} from '../../js/actions/alert' ;
+import FileBase from 'react-file-base64';
 import {motion} from 'framer-motion'
 
 function Register() {
@@ -85,7 +86,22 @@ const pageVariants = {
           />
         </div>
 
-        <div className="form__field">
+<div className="div_form__field">
+<label>Profile Picture : </label>
+          <FileBase
+            typel="file"
+            multiple={false}
+            onDone={({ base64 }) =>
+              setInputs({ ...inputs, avatar: base64 })
+            }
+           
+          />
+
+          
+        </div>
+
+
+        {/* <div className="form__field">
           
           <input
             value={avatar}
@@ -97,7 +113,7 @@ const pageVariants = {
             required
             onChange={e => changeHandle(e)}
           />
-        </div>
+        </div> */}
 
         <div className="form__field">
           
